@@ -47,13 +47,16 @@ describe('sayHello', function() {
         expect(sayHello(true)).toBe("Hello, World!");
     })
     it('should return "Hello, World!"', function() {
-      expect(sayHello(false)).toBe("Hello, World!");
+        expect(sayHello(false)).toBe("Hello, World!");
     })
 })
 
 describe('isFive', function(){
-    it('should be defined as a function', function() {
-        expect(typeof isFive).toBe('function')
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    })
+    it('should be a boolean', function(){
+        expect(typeof isFive()).toBe('boolean');
     })
 
 })
