@@ -169,5 +169,8 @@ describe('add', function() {
     it('should return 5 with inputs of 2 and 3', function() {
         expect(add(2,3)).toBe(5) ;
     })
+    it('should return -12 with inputs of -3 and -9', function() {
+        expect(add(-3,-9)).toBe(-12);
+    })
 
     })
