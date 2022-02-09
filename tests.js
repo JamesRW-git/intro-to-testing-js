@@ -157,5 +157,11 @@ describe('isVowel', function() {
     it('should always return true with an input of "U"', function() {
         expect(isVowel('U')).toBe(true);
     })
-
 })
+
+describe('add', function() {
+    it('should be a defined function', function() {
+        expect(typeof add).toBe('function');
+    })
+
+    })
