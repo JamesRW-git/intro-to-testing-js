@@ -139,5 +139,11 @@ describe('isVowel', function() {
     it('should always return true with an input of "E"', function () {
         expect(isVowel('E')).toBe(true);
     })
+    it('should always return true with an input of "i"', function() {
+        expect(isVowel('i')).toBe(true);
+    })
+    it('should always return true with an input of "I"', function() {
+        expect(isVowel('I')).toBe(true);
+    })
 
 })
