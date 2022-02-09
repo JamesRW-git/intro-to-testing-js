@@ -118,5 +118,8 @@ describe('isVowel', function() {
     it('should always return false with an input of "y"', function() {
         expect(isVowel('y')).toBe(false);
     })
+    it('should always return false with an input of 4', function() {
+        expect(isVowel(4)).toBe(false);
+    })
 
 })
