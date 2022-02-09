@@ -23,7 +23,7 @@ function isFive(num) {
 
 function isEven(num) {
     let x = num;
-    if(num % 2 == 0) {
+    if(typeof x != 'boolean' && x % 2 == 0) {
         return true
     } else {
         return false

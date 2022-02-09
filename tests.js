@@ -94,5 +94,8 @@ describe('isEven', function(){
     it('should return false when passed Infinity', function() {
         expect(isEven(Infinity)).toBe(false);
     })
+    it('should return false when called with a boolean input', function() {
+        expect(isEven(false)).toBe(false);
+    })
 })
 
