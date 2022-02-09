@@ -29,3 +29,7 @@ function isEven(num) {
         return false
     }
 }
+
+function isVowel() {
+
+}
