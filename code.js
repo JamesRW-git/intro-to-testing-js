@@ -22,7 +22,8 @@ function isFive(num) {
 }
 
 function isEven(num) {
-    if(num == 2) {
+    let x = num;
+    if(num % 2 == 0) {
         return true
     } else {
         return false

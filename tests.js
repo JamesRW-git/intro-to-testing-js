@@ -79,5 +79,8 @@ describe('isEven', function(){
     it('should return true when passed 2', function() {
         expect(isEven(2)).toBe(true);
     })
+    it('should return true when passed -4', function() {
+        expect(isEven(-4)).toBe(true);
+    })
 })
 
