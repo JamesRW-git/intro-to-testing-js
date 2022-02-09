@@ -31,7 +31,7 @@ function isEven(num) {
 }
 
 function isVowel(input) {
-    if(input === 'a' || input === 'A') {
+    if(input === 'a' || input === 'A' || input === 'e' || input === 'E') {
         return true
     } else {
         return false
