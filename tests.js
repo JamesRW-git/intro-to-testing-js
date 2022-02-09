@@ -97,5 +97,8 @@ describe('isEven', function(){
     it('should return false when called with a boolean input', function() {
         expect(isEven(false)).toBe(false);
     })
+    it('should return false when called without an argument', function() {
+        expect(isEven()).toBe(false);
+    })
 })
 
