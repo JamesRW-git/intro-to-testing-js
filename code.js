@@ -31,7 +31,9 @@ function isEven(num) {
 }
 
 function isVowel(input) {
-    if(input === 'a' || input === 'A' || input === 'e' || input === 'E' || input === 'i' || input === 'I') {
+    if(typeof input != 'string') {
+        return false
+    } else if(input.toLowerCase() === 'a' || input.toLowerCase() === 'e' || input.toLowerCase() === 'i' || input.toLowerCase() === 'o') {
         return true
     } else {
         return false
