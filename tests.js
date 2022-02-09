@@ -189,4 +189,10 @@ describe('add', function() {
     it('should return NaN when inputs are "banana" and "split"', function(){
         expect(add('banana', 'split')).toBe(isNaN());
     })
+    it('should return NaN when inputs are 2 and "apples"', function(){
+        expect(add(2, 'apples')).toBe(isNaN());
+    })
+    it('should return NaN if input is undefined', function(){
+        expect(add()).toBe(isNaN());
+    })
     })
