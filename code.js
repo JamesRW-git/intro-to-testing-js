@@ -14,7 +14,7 @@ function sayHello(input) {
 }
 
 function isFive(num) {
-    if(num == 5){
+    if(num == 5) {
         return true
     } else {
         return false
@@ -22,5 +22,9 @@ function isFive(num) {
 }
 
 function isEven(num) {
-    return true
+    if(num == 2) {
+        return true
+    } else {
+        return false
+    }
 }

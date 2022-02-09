@@ -76,5 +76,8 @@ describe('isEven', function(){
     it('should return a boolean no matter the input', function() {
         expect(typeof isEven()).toBe('boolean');
     })
+    it('should return true when passed 2', function() {
+        expect(isEven(2)).toBe(true);
+    })
 })
 
