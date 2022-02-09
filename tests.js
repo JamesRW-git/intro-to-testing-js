@@ -85,5 +85,8 @@ describe('isEven', function(){
     it('should return false when passed 3', function() {
         expect(isEven(3)).toBe(false);
     })
+    it('should return false when input is "banana"', function() {
+        expect(isEven("banana")).toBe(false);
+    })
 })
 
