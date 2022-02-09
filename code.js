@@ -4,9 +4,15 @@
 //}
 
 function sayHello(input) {
-    if (input === false){
+    if (input === true){
+        return 'Hello, World!';
+    } else if (input === false){
         return 'Hello, World!';
     } else {
         return 'Hello, ' + input + '!';
     }
+}
+
+function isFive(num) {
+
 }
