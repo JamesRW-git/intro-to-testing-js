@@ -30,6 +30,6 @@ function isEven(num) {
     }
 }
 
-function isVowel() {
-
+function isVowel(input) {
+    return true
 }
