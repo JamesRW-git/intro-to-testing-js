@@ -66,6 +66,12 @@ describe('isFive', function(){
     it('should return true when passed "5"', function(){
         expect(isFive("5")).toBe(true);
     })
+    it('should return true when passed "five"', function(){
+        expect(isFive('five')).toBe(true);
+    })
+    it('should return true when passed "FIVE"', function(){
+        expect(isFive('FIVE')).toBe(true);
+    })
 })
 
 //isEven tests
@@ -102,6 +108,7 @@ describe('isEven', function(){
     })
 })
 
+//isVowel tests
 describe('isVowel', function() {
     it('should be a defined function', function() {
         expect(typeof isVowel).toBe('function');
@@ -159,6 +166,7 @@ describe('isVowel', function() {
     })
 })
 
+//add tests
 describe('add', function() {
     it('should be a defined function', function() {
         expect(typeof add).toBe('function');
@@ -177,5 +185,8 @@ describe('add', function() {
     })
     it('should return 6 with inputs of "-4" and "10"', function() {
         expect(add('-4','10')).toBe(6);
+    })
+    it('should return NaN when inputs are "banana" and "split"', function(){
+        expect(add('banana', 'split')).toBe(isNaN());
     })
     })

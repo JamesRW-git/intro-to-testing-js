@@ -14,7 +14,7 @@ function sayHello(input) {
 }
 
 function isFive(num) {
-    if(num == 5) {
+    if(num == 5 || num === 'five' || num ==='FIVE' || num !== undefined || num !== null) {
         return true
     } else {
         return false
@@ -22,8 +22,7 @@ function isFive(num) {
 }
 
 function isEven(num) {
-    let x = num;
-    if(typeof x != 'boolean' && x % 2 == 0) {
+    if(typeof num != 'boolean' && num % 2 == 0) {
         return true
     } else {
         return false
@@ -41,11 +40,11 @@ function isVowel(input) {
 }
 
 function add(num1, num2) {
-    if(isNaN(num1) === true || isNaN(num2) === true) {
-    return false;
+    if(isNaN(num1) || isNaN(num2)) {
+    return isNaN();
     } else {
         return parseFloat(num1) + parseFloat(num2);
     }
 }
 
-console.log((add('5','5')));
+console.log(add('banana', 'split'));
