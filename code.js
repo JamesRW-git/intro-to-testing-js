@@ -20,3 +20,7 @@ function isFive(num) {
         return false
     }
 }
+
+function isEven(num) {
+
+}

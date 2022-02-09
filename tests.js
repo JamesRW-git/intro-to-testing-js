@@ -27,6 +27,7 @@
 //    });
 //});
 
+//sayHello tests
 describe('sayHello', function() {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
@@ -51,6 +52,7 @@ describe('sayHello', function() {
     })
 })
 
+//isFive tests
 describe('isFive', function(){
     it('should be a defined function', function() {
         expect(typeof isFive).toBe('function');
@@ -64,5 +66,12 @@ describe('isFive', function(){
     it('should return true when passed "5"', function(){
         expect(isFive("5")).toBe(true);
     })
-
 })
+
+//isEven tests
+describe('isEven', function(){
+    it('should be a defined function', function() {
+        expect(typeof isEven).toBe('function');
+    })
+})
+
