@@ -91,5 +91,8 @@ describe('isEven', function(){
     it('should return true when passed "8"', function() {
         expect(isEven("8")).toBe(true);
     })
+    it('should return false when passed Infinity', function() {
+        expect(isEven(Infinity)).toBe(false);
+    })
 })
 
