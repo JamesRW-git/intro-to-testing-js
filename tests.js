@@ -166,5 +166,8 @@ describe('add', function() {
     it('should return false if input does not contain a number', function() {
         expect(typeof add(1, 2)).toBe('number');
     })
+    it('should return 5 with inputs of 2 and 3', function() {
+        expect(add(2,3)).toBe(5) ;
+    })
 
     })

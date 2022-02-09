@@ -44,8 +44,8 @@ function add(num1, num2) {
     if(isNaN(num1) === true || isNaN(num2) === true) {
     return false;
     } else {
-        return num1 + num2;
+        return parseFloat(num1) + parseFloat(num2);
     }
 }
 
-console.log((add(1,2)));
+console.log((add('5','5')));
