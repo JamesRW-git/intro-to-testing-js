@@ -172,5 +172,7 @@ describe('add', function() {
     it('should return -12 with inputs of -3 and -9', function() {
         expect(add(-3,-9)).toBe(-12);
     })
-
+    it('should return 11 with inputs of "5" and 6', function() {
+        expect(add('5', 6)).toBe(11);
+    })
     })
