@@ -40,6 +40,12 @@ function isVowel(input) {
     }
 }
 
-function add(num) {
-
+function add(num1, num2) {
+    if(isNaN(num1) === true || isNaN(num2) === true) {
+    return false;
+    } else {
+        return num1 + num2;
+    }
 }
+
+console.log((add(1,2)));

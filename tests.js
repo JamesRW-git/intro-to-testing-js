@@ -163,5 +163,8 @@ describe('add', function() {
     it('should be a defined function', function() {
         expect(typeof add).toBe('function');
     })
+    it('should return false if input does not contain a number', function() {
+        expect(typeof add(1, 2)).toBe('number');
+    })
 
     })
